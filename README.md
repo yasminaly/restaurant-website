@@ -51,7 +51,7 @@ On paper, plan out the website’s primary boxes, semantics & CSS properties lik
 - [Sketching a website](https://learn-the-web.algonquindesign.ca/courses/web-dev-1/sketching-a-website)
 - [Paper plans](https://learn-the-web.algonquindesign.ca/courses/web-dev-1/paper-plans)
 
-Also, denote what code exercises from this term that are most relevant to the code you need to write for each chunk of the website. Like we did in this activity:
+Also, denote what code exercises (or videos) from this term that are most relevant to the code you need to write for each chunk of the website. Like we did in this activity:
 
 - [Finding patterns](https://learn-the-web.algonquindesign.ca/courses/web-dev-1/finding-patterns/)
 
