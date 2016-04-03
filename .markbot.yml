@@ -1,0 +1,82 @@
+repo: 'restaurant-website'
+canvasCourse: '467502'
+canvasAssignment: '4177680'
+
+naming: true
+commits: 10
+liveWebsite: true
+
+git:
+  numCommits: 10
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    has:
+      - 'header'
+      - 'header h1'
+      - 'header nav'
+      - 'header nav li'
+      - 'header nav li a'
+      - 'main'
+      - 'section'
+      - 'footer'
+      - 'img'
+      - 'h2'
+      - 'div'
+      - ['link[href*="fonts.googleapis.com"]', 'A webfont from Google Fonts should be used']
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - '@media only screen and \(min-width: 25em\) \{'
+      - '@media only screen and \(min-width: 38em\) \{'
+      - '@media only screen and \(min-width: 60em\) \{'
+      - '@media only screen and \(min-width: 90em\) \{'
+      - 'font\-size\: 110%'
+      - 'font\-size\: 120%'
+      - 'font\-size\: 130%'
+      - 'line\-height\: 1\.4'
+      - 'line\-height\: 1\.5'
+      - 'padding'
+      - 'margin'
+      - 'position: relative'
+      - 'position: absolute'
+      - 'float: (left|right)'
+      - 'display: block'
+      - 'display: inline-block'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
+
+functionality:
+  - path: 'index.html'
+    tests:
+      - |
+        let headerLink = $('header nav a');
+        let oldBg = css(headerLink).backgroundColor;
+
+        hover('header nav a', function () {
+          if (css(headerLink).backgroundColor == oldBg) fail('The background colour of the navigation links doesn’t change when hovered')
+          pass();
+        });
