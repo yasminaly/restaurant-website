@@ -20,7 +20,7 @@
 ## Markbot will expect
 
 - `header`, `header nav`, `header h1`, `header li`, `header nav a`
-- `h2`, `div`, `section`, `img`, `footer`
+- `main`, `h2`, `div`, `section`, `img`, `footer`
 - A Google Font
 - CSS boilerplate: `cssviewport`, `borderbox`, `textsize`
 - Standard media query widths: `25em`, `38em`, `60em`, `90em`
