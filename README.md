@@ -71,7 +71,9 @@ In class, during week 14 you must show Thomas progress on the coded version of y
 
 In class, during week 15, we’ll be testing everybody’s website in different browsers to make sure they look good.
 
-**You’ll be required to submit screenshots for your website for every browser listed.**
+*You’ll be required to submit screenshots for your website for every browser listed.*
+
+**When I’m grading the websites I’ll be using a random browser to view your site.**
 
 ### 4. Request for grade
 
