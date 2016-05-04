@@ -18,10 +18,79 @@ box-sizing: inherit;
 }
 
 html {
-  font-family: 'Merriweather', serif;
+  font: normal 100%/1.5 'Merriweather', serif;
 }
 
 header {
   background-color: #e2e2e2;
 
+}
+
+h1 {
+  margin: 0;
+  float: left;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+h2 {margin: 0;
+  font-size: 5rem;
+  line-height: 1.4;
+  font-family: Merriweather bold;
+  float: right;
+  position: relative;
+  top: -600px;
+  left: -400px;
+}
+
+p {
+  margin: 1.5rem 0;
+  font-family: Merriweather bold;
+  font-size: 2.5rem;
+  float: left;
+  clear: right;
+  position: relative;
+  top: -630px;
+  right: -680px;
+}
+
+h3 {
+  margin: 1.5rem 0;
+  font-family: Merriweather light;
+  font-size: 1.5rem;
+  float: left;
+  clear: right;
+  position: relative;
+  top: -570px;
+  right: -450px;
+  text-align: center;
+}
+
+.banner-btn {
+  display: inline-block;
+  font-size: 1.125rem;
+  background-color: #333;
+  color: white;
+  padding: .4em 0.75em 0.3em;
+  border-radius: 8px;
+  text-decoration: none;
+  position: absolute;
+  top: 870px;
+  right: 550px;
+}
+
+.nav {
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2em;
+  padding-top: 2em;
 }
