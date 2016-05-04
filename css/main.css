@@ -43,7 +43,7 @@ h2 {margin: 0;
   left: -400px;
 }
 
-p {
+.banner-content p {
   margin: 1.5rem 0;
   font-family: Merriweather bold;
   font-size: 2.5rem;
@@ -93,4 +93,24 @@ h3 {
   color: black;
   margin-right: 2em;
   padding-top: 2em;
+}
+
+p {
+  margin: 1.5rem 0;
+  font-family: Merriweather light;
+  font-size: 1rem;
+  float: left;
+  clear: right;
+  position: relative;
+  top: -630px;
+  right: -680px;
+}
+
+.logo{
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+  float: left;
+  margin-left: 400px;
+  margin-right: 20px;
 }
