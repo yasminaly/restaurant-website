@@ -14,11 +14,11 @@ html {
 }
 
 *, *::before, *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  font: normal 100%/1.5 'Merriweather', serif;
+  font: normal 100%/1.5 "Merriweather", serif;
 }
 
 header {
@@ -37,7 +37,7 @@ h2 {
   margin: 0;
   font-size: 5rem;
   line-height: 1.4;
-  font-family: Merriweather bold;
+  font-family: Merriweather-bold;
   float: right;
   position: relative;
   top: -600px;
@@ -46,32 +46,32 @@ h2 {
 
 .banner-content p {
   margin: 1.5rem 0;
-  font-family: Merriweather bold;
+  font-family: Merriweather-bold;
   font-size: 2.5rem;
   float: left;
   clear: right;
   position: relative;
   top: -630px;
-  right: -680px;
+  right: -640px;
 }
 
 h3 {
   margin: 1.5rem 0;
-  font-family: Merriweather light;
+  font-family: Merriweather-light;
   font-size: 1.5rem;
   float: left;
   clear: right;
   position: relative;
   top: -570px;
-  right: -450px;
+  right: -380px;
   text-align: center;
 }
 
 .banner-btn {
   display: inline-block;
   font-size: 1.125rem;
-  background-color: #333;
-  color: white;
+  background-color: grey;
+  color: #000;
   padding: .4em 0.75em 0.3em;
   border-radius: 8px;
   text-decoration: none;
@@ -107,11 +107,17 @@ p {
   right: -680px;
 }
 
-.logo{
+.footer-logo {
   text-decoration: none;
   font-size: 2em;
-  color: #fff;
+  color: black;
   float: left;
   margin-left: 400px;
   margin-right: 20px;
+}
+
+nav a:hover {
+  background-color: grey;
+  text-decoration: none;
+  color: #fff;
 }
