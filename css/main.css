@@ -16,3 +16,12 @@ html {
 *, *::before, *::after {
 box-sizing: inherit;
 }
+
+html {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background-color: #e2e2e2;
+
+}
