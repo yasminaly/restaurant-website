@@ -23,6 +23,7 @@ html {
 
 header {
   background-color: #e2e2e2;
+  margin-bottom: 3em;
 
 }
 
@@ -31,9 +32,16 @@ h1 {
   float: left;
   margin-right: 2em;
   margin-left: 2em;
+  font-size: 1.5em;
 }
 
-h2 {
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+
+.banner h2 {
   margin: 0;
   font-size: 5rem;
   line-height: 1.4;
@@ -41,29 +49,28 @@ h2 {
   float: right;
   position: relative;
   top: -600px;
-  left: -400px;
+  left: -380px;
 }
 
 .banner-content p {
   margin: 1.5rem 0;
   font-family: Merriweather-bold;
   font-size: 2.5rem;
-  float: left;
-  clear: right;
+  float: right;
   position: relative;
   top: -630px;
-  right: -640px;
+  right: 420px;
+  display: block;
 }
 
 h3 {
   margin: 1.5rem 0;
   font-family: Merriweather-light;
   font-size: 1.5rem;
-  float: left;
-  clear: right;
+  float: right;
   position: relative;
   top: -570px;
-  right: -380px;
+  right: 170px;
   text-align: center;
 }
 
@@ -83,6 +90,7 @@ h3 {
 .nav {
   margin: 0;
   list-style-type: none;
+  display: none;
 }
 
 .nav li {
@@ -104,7 +112,7 @@ p {
   clear: right;
   position: relative;
   top: -630px;
-  right: -680px;
+  right: -580px;
 }
 
 .footer-logo {
@@ -112,12 +120,79 @@ p {
   font-size: 2em;
   color: black;
   float: left;
-  margin-left: 400px;
-  margin-right: 20px;
+  margin-left: 200px;
+  margin-top: -100px;
+
 }
 
 nav a:hover {
   background-color: grey;
   text-decoration: none;
   color: #fff;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-family: Merriweather-bold;
+  float: right;
+  position: relative;
+  top: -600px;
+  left: -400px;
+}
+
+.salads {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Merriweather-light;
+  float: right;
+  position: relative;
+  top: -600px;
+  left: -240px;
+}
+
+.greens {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Merriweather-light;
+  float: right;
+  position: relative;
+  top: -600px;
+  left: -220px;
+}
+
+.ali {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Merriweather-light;
+  float: right;
+  position: relative;
+  top: -600px;
+  left: -270px;
+}
+
+.sec-nutrition .sec-nutrition .sec-chefs  .sec-promotions {
+  float: right;
+  position: relative;
+}
+
+.contact-info {
+  float: right;
+  position: relative;
+  top: 550px;
+  left: -600px;
+  margin-top: -30px;
+}
+
+.social-media {
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.nav-check: checked ~ .nav {
+  display: block;
 }
