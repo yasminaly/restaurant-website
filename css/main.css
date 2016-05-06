@@ -21,9 +21,14 @@ html {
   font: normal 100%/1.5 "Merriweather", serif;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   background-color: #e2e2e2;
   margin-bottom: 3em;
+  position: relative;
 
 }
 
@@ -32,7 +37,7 @@ h1 {
   float: left;
   margin-right: 2em;
   margin-left: 2em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .img-flex {
@@ -40,51 +45,45 @@ h1 {
   width: 100%;
 }
 
-
-.banner h2 {
-  margin: 0;
-  font-size: 5rem;
-  line-height: 1.4;
-  font-family: Merriweather-bold;
-  float: right;
+.banner {
   position: relative;
-  top: -600px;
-  left: -380px;
 }
 
-.banner-content p {
-  margin: 1.5rem 0;
-  font-family: Merriweather-bold;
-  font-size: 2.5rem;
-  float: right;
-  position: relative;
-  top: -630px;
-  right: 420px;
-  display: block;
+.banner h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.banner-p {
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
-  margin: 1.5rem 0;
-  font-family: Merriweather-light;
-  font-size: 1.5rem;
-  float: right;
-  position: relative;
-  top: -570px;
-  right: 170px;
-  text-align: center;
+  font-weight: 300;
+  font-size: .8rem;
+  margin-top: 0;
 }
 
 .banner-btn {
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: .75rem;
   background-color: grey;
   color: #000;
   padding: .4em 0.75em 0.3em;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
+}
+
+.banner-content {
   position: absolute;
-  top: 870px;
-  right: 550px;
+  top: 1.5em;
+  text-align: center;
+  transform: translateX(42%);
 }
 
 .nav {
@@ -101,28 +100,7 @@ h3 {
   text-decoration: none;
   color: black;
   margin-right: 2em;
-  padding-top: 2em;
-}
-
-p {
-  margin: 1.5rem 0;
-  font-family: Merriweather light;
-  font-size: 1rem;
-  float: left;
-  clear: right;
-  position: relative;
-  top: -630px;
-  right: -580px;
-}
-
-.footer-logo {
-  text-decoration: none;
-  font-size: 2em;
-  color: black;
-  float: left;
-  margin-left: 200px;
-  margin-top: -100px;
-
+  padding: .75em;
 }
 
 nav a:hover {
@@ -131,68 +109,173 @@ nav a:hover {
   color: #fff;
 }
 
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 40px;
+}
+
+.nav-open, .nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: #ccc;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
 main h2 {
   margin: 0;
-  font-size: 4rem;
   line-height: 1.5;
-  font-family: Merriweather-bold;
-  float: right;
-  position: relative;
-  top: -600px;
-  left: -400px;
+  font-weight: bold;
+
 }
 
-.salads {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: Merriweather-light;
-  float: right;
-  position: relative;
-  top: -600px;
-  left: -240px;
+.sec-content {
+  padding-top: 1em;
+  padding: .5em;
 }
 
-.greens {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: Merriweather-light;
-  float: right;
-  position: relative;
-  top: -600px;
-  left: -220px;
-}
-
-.ali {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: Merriweather-light;
-  float: right;
-  position: relative;
-  top: -600px;
-  left: -270px;
-}
-
-.sec-nutrition .sec-nutrition .sec-chefs  .sec-promotions {
-  float: right;
-  position: relative;
-}
-
-.contact-info {
-  float: right;
-  position: relative;
-  top: 550px;
-  left: -600px;
-  margin-top: -30px;
-}
-
-.social-media {
+.no-deco {
   text-decoration: none;
-  margin-right: 1em;
+  color: black;
 }
 
-.nav-check: checked ~ .nav {
-  display: block;
+.footer-logo {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 2em;
+  padding: .5em;
+  background-color: grey;
+}
+
+@media only screen and (min-width: 25em) {
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .sec-menu, .sec-nutrition, .sec-chefs, .sec-promotions {
+    position: relative;
+    margin-bottom: 2em;
+  }
+
+  .sec-content {
+    position: absolute;
+    top: 10em;
+    right: 0;
+    max-width: 20em;
+  }
+
+    .banner h2 {
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .banner-p {
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    .banner-btn {
+      font-size: 1rem;
+      padding: .4em 0.75em 0.3em;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 7em;
+      text-align: center;
+      transform: translateX(80%);
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  .banner h2 {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .banner-p {
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 7em;
+    text-align: center;
+    transform: translateX(80%);
+  }
+
+
 }
