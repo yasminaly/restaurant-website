@@ -266,7 +266,7 @@ main p {
   border-radius: 10px;
   text-decoration: none;
 }
-
+}
 @media only screen and (min-width: 60em) {
 
   html {
@@ -375,3 +375,4 @@ main p {
   main p {
     padding-right: 3em;
   }
+}
