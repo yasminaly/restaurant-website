@@ -100,23 +100,23 @@ h3 {
   top: 100%;
   width: 15em;
   z-index: 1000;
+  text-align: right;
 }
 
 .nav li {
   display: block;
-  text-align: right;
 }
 
 .nav a {
   text-decoration: none;
   color: black;
-  margin-right: 2em;
+  padding-right: 2em;
   padding: .75em;
+  display: block;
 }
 
 .nav li:hover {
   background-color: grey;
-  text-decoration: none;
   color: white;
 }
 
