@@ -110,8 +110,7 @@ h3 {
 .nav a {
   text-decoration: none;
   color: black;
-  padding-right: 2em;
-  padding: .75em;
+  padding: .75em 2em .75em .75em;
   display: block;
 }
 
@@ -344,6 +343,14 @@ footer {
 
   .nav li {
     display: inline-block;
+  }
+
+  .social-media {
+    float: right;
+  }
+
+  .footer-logo {
+    float: left;
   }
 }
 
