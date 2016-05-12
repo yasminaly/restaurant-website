@@ -114,7 +114,7 @@ h3 {
   display: block;
 }
 
-.nav li > a:hover {
+.nav a:hover {
   background-color: grey;
   color: white;
 }
