@@ -1,4 +1,3 @@
-ub
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -29,7 +28,6 @@ body {
 header {
   background-color: #e2e2e2;
   margin-bottom: 3em;
-  position: relative;
 
 }
 
@@ -38,6 +36,10 @@ h1 {
   margin-right: 2em;
   margin-left: 2em;
   font-size: 1em;
+}
+
+.logo {
+  display: inline-block;
 }
 
 .img-flex {
@@ -91,16 +93,18 @@ h3 {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #ccc;
   display: none;
   position: absolute;
   right: 0;
   top: 100%;
-  width: 10em;
-  float: right;
+  width: 15em;
+  z-index: 1000;
 }
 
 .nav li {
-  display: inline-block;
+  display: block;
+  text-align: right;
 }
 
 .nav a {
@@ -110,10 +114,15 @@ h3 {
   padding: .75em;
 }
 
-nav a:hover {
+.nav li:hover {
   background-color: grey;
   text-decoration: none;
   color: white;
+}
+
+.nav-bar {
+  position: relative;
+  padding: 1em 0 40px;
 }
 
 .nav-check:checked ~ .nav {
@@ -126,6 +135,7 @@ nav a:hover {
   display: inline-block;
   width: 40px;
   position: absolute;
+  right: 0;
   bottom: 0;
 }
 
@@ -141,6 +151,7 @@ nav a:hover {
 .nav-check {
   position: absolute;
   top: -3em;
+  right: 0;
 }
 
 .nav-close {
@@ -214,22 +225,6 @@ footer {
     line-height: 1.4;
   }
 
-  .nav-label, .nav-label img, .nav-open, .nav-close {
-    display: none;
-  }
-
-  .nav-check:checked ~ .nav-label .nav-open {
-    display: none;
-  }
-
-  .nav-check:checked ~ .nav-label .nav-close {
-      display: none;
-  }
-
-  .nav {
-    display: block;
-  }
-
   .banner h2 {
     font-size: 3rem;
     line-height: 1.4;
@@ -272,7 +267,7 @@ footer {
   html {
     font-size: 120%;
     line-height: 1.5;
-    }
+  }
 
   .sec-menu, .sec-nutrition, .sec-chefs, .sec-promotions {
     position: relative;
@@ -320,14 +315,36 @@ footer {
     padding: .4em 0.75em 0.3em;
     border-radius: 6px;
     text-decoration: none;
-    }
+  }
 
   .banner-content {
     position: absolute;
     top: 7em;
     text-align: center;
     transform: translateX(70%);
-    }
+  }
+
+  .nav-label, .nav-open, .nav-close {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-open {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-close {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    top: 1em;
+    width: 75%;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 90em) {
